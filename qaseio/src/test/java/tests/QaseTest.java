@@ -68,8 +68,8 @@ public class QaseTest {
     }
 
     @Test
-    void deleteCaseTest() {  //не позволяет удалить
-        int statusCode = new CaseAdapter().deleteCase("AQA20", 3).statusCode();
+    void deleteCaseTest() {
+        int statusCode = new CaseAdapter().deleteCase("AQA20", 4).statusCode();
         Assert.assertEquals(statusCode, HTTP_OK);
     }
 }
